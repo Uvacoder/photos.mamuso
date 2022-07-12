@@ -1,0 +1,19 @@
+@import './reset';
+
+/* 
+  CSS
+*/
+html {
+  background: #EEF1F1;
+  font-size: 62.5%;
+}
+
+body {
+  background: #EEF1F1;
+  font-family: #111;
+  height: auto;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
