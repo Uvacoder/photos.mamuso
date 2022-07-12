@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "process": "ts-node -T tasks/process.ts",
-    "export": "next export",
-    "deploy": "export NODE_ENV=production && ./tasks/deploy.sh"
+    "export": "next export"
   },
   "dependencies": {
     "next": "12.2.2",
