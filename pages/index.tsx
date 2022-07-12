@@ -5,7 +5,7 @@ const Home: NextPage = () => {
     <>
       <section className='homegrid'>
 
-        Hi, I&apos;m <span className='name'>Kai</span>
+        Home, sweet home
 
       </section>
     </>
