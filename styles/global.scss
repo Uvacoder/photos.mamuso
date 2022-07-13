@@ -1,5 +1,20 @@
 @import './reset';
 
+
+@font-face {
+  font-family: "lekton";
+  src: url("/fonts/lekton-regular.ttf") format('truetype'), url("/fonts/lekton-regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lekton";
+  src: url("/fonts/lekton-bold.ttf") format('truetype'), url("/fonts/lekton-bold.woff") format('woff');
+  font-weight: 700;
+  font-style: bold;
+}
+
 /* 
   CSS
 */
