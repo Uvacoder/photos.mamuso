@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-export default ({ children, title = "Manuel has a camera" }: any) => {
-
+export default ({ children, title = "" }: any) => {
+  const composedTitle = `${title}${title != '' ? ' – ': ''}Manuel has a camera`
   return (
     <div>
       <Head>
-        <title>{title}</title>
+        <title>{composedTitle}</title>
       </Head>
       <main>
         {children}
