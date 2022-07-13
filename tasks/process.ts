@@ -10,7 +10,7 @@ import sharp from 'sharp';
 // Folder with original images
 const imageFolder = './public/images/';
 const thumbFolder = './public/thumbs/';
-const dataFolder = './data/';
+const dataFolder = './data/export/';
 
 // -----------------------------------------------------------
 

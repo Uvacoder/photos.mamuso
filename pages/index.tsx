@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <section className='homegrid'>
-        Home, sweet home
+        Home, <strong>sweet</strong> home
       </section>
     </Layout>
   )
