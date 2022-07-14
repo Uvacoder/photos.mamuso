@@ -50,6 +50,8 @@ const dataFolder = './data/export/';
             exif.gps.GPSLongitude[1] / 60 +
             exif.gps.GPSLongitude[2] / 3600
           ).toFixed(6),
+          width: exif.exif.PixelXDimension,
+          height: exif.exif.PixelYDimension,
           colorPalette: hexPalette
         };
 

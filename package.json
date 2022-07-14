@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "process": "ts-node -T tasks/process.ts",
-    "export": "next export"
+    "stitchjson": "ts-node -T tasks/stitchjson.ts"
   },
   "dependencies": {
     "next": "12.2.2",
