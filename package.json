@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "process": "ts-node -T tasks/process.ts",
-    "export": "next export"
+    "stitchjson": "ts-node -T tasks/stitchjson.ts"
   },
   "dependencies": {
     "next": "12.2.2",
@@ -24,6 +25,7 @@
     "eslint": "^8.19.0",
     "eslint-config-next": "^12.2.2",
     "fast-exif": "^1.0.1",
+    "glob": "^8.0.3",
     "sharp": "^0.30.7",
     "stylelint-config-recommended": "^8.0.0",
     "ts-node": "^10.8.2",

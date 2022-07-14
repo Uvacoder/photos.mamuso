@@ -1,19 +1,62 @@
 @import './reset';
 
+
+@font-face {
+  font-family: "lekton";
+  src: url("/fonts/lekton/lekton-regular.ttf") format('truetype'), url("/fonts/lekton/lekton-regular.woff") format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lekton";
+  src: url("/fonts/lekton/lekton-bold.ttf") format('truetype'), url("/fonts/lekton/lekton-bold.woff") format('woff');
+  font-weight: 700;
+  font-style: bold;
+}
+
 /* 
   CSS
 */
 html {
   background: #EEF1F1;
-  font-size: 62.5%;
+  font-size: 14px;
 }
 
 body {
   background: #EEF1F1;
-  font-family: #111;
+  color: #111;
+  font-family: "lekton", monospace;
   height: auto;
   line-height: 1.5;
-  margin: 0;
+  margin: 32px;
   min-height: 100%;
-  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    &::after {
+      content: '';
+      flex-grow: 999999999;
+    }
+    div {
+      margin: 6px;
+      background-color: violet;
+      position: relative;
+    }
+    i {
+      display: block;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      vertical-align: bottom;
+    }
+}
+
+#logo path{
+  fill: violet;
 }

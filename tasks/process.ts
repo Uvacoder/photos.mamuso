@@ -10,7 +10,7 @@ import sharp from 'sharp';
 // Folder with original images
 const imageFolder = './public/images/';
 const thumbFolder = './public/thumbs/';
-const dataFolder = './data/';
+const dataFolder = './data/export/';
 
 // -----------------------------------------------------------
 
@@ -50,6 +50,8 @@ const dataFolder = './data/';
             exif.gps.GPSLongitude[1] / 60 +
             exif.gps.GPSLongitude[2] / 3600
           ).toFixed(6),
+          width: exif.exif.PixelXDimension,
+          height: exif.exif.PixelYDimension,
           colorPalette: hexPalette
         };
 
