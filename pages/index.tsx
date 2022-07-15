@@ -3,17 +3,13 @@ import Link from "next/link";
 import path from 'path';
 
 import Layout from "../layouts/layout";
-import Logo from "../components/logo";
 import data from "../data/data.json";
 
-const galleryHeight = 348;
+const galleryHeight = 320;
 
 const Home: NextPage = () => {
   return (
     <Layout>
-
-      <Logo/>
-
       <section className='gallery-grid'>
         {data.map(p => (
           <div key={p.fileName} style={{ width: `${p.width*galleryHeight/p.height}px`, flexGrow: `${p.width*galleryHeight/p.height}` }}>
