@@ -33,7 +33,6 @@ body {
   min-height: 100%;
 }
 
-
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +56,26 @@ body {
     }
 }
 
-#logo path{
-  fill: #121419;
-  opacity: 0.8;
+main {
+  display: grid;
+  grid-template-columns: minmax(192px, 336px) auto;
+  gap: 16px;
+  #sidebar {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #content {
+    grid-column: 2;
+    grid-row: 1;
+    overflow: auto;
+    margin-top: 64px;
+  }
+}
+
+#logo{
+  margin-bottom: 44px; 
+  path {
+    fill: #121419;
+    opacity: 0.8;
+  }
 }
