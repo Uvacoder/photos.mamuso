@@ -59,8 +59,6 @@ const dataFolder = './data/export/';
         const sharpImage = sharp(targetImage);
 
         sharpImage.resize(4096, 4096, { fit: 'inside' }).toFile(`${thumbFolder}${basename}_4096.jpg`);
-        sharpImage.resize(3072, 3072, { fit: 'inside' }).toFile(`${thumbFolder}${basename}_3072.jpg`);
-        sharpImage.resize(2048, 2048, { fit: 'inside' }).toFile(`${thumbFolder}${basename}_2048.jpg`);
         sharpImage.resize(1024, 1024, { fit: 'inside' }).toFile(`${thumbFolder}${basename}_1024.jpg`);
 
         // Save JSON file
