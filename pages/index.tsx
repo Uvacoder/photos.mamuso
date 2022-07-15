@@ -5,7 +5,7 @@ import path from 'path';
 import Layout from "../layouts/layout";
 import data from "../data/data.json";
 
-const galleryHeight = 348;
+const galleryHeight = 320;
 
 const Home: NextPage = () => {
   return (
