@@ -12,12 +12,19 @@ const PhotoPage: NextPage = ({ photo }: any) => {
     <Layout photo={photo} title={photo.title}>
       <Head>
         <style>{`
+          @-webkit-keyframes logoPalette {
+            ${photo.colorPalette[0] ? `0% { fill: ${photo.colorPalette[0]};}` : null}
+            ${photo.colorPalette[1] ? `25% { fill: ${photo.colorPalette[1]};}` : null}
+            ${photo.colorPalette[2] ? `50% { fill: ${photo.colorPalette[2]};}` : null}
+            ${photo.colorPalette[3] ? `75% { fill: ${photo.colorPalette[3]};}` : null}
+            ${photo.colorPalette[4] ? `100% { fill: ${photo.colorPalette[4]};}` : null}
+          }
           @keyframes logoPalette {
-            ${photo.colorPalette[0] ? `0% { fill: ${photo.colorPalette[0]} ;}` : null}
-            ${photo.colorPalette[1] ? `25% { fill: ${photo.colorPalette[1]} ;}` : null}
-            ${photo.colorPalette[2] ? `50% { fill: ${photo.colorPalette[2]} ;}` : null}
-            ${photo.colorPalette[3] ? `75% { fill: ${photo.colorPalette[3]} ;}` : null}
-            ${photo.colorPalette[4] ? `100% { fill: ${photo.colorPalette[4]} ;}` : null}
+            ${photo.colorPalette[0] ? `0% { fill: ${photo.colorPalette[0]};}` : null}
+            ${photo.colorPalette[1] ? `25% { fill: ${photo.colorPalette[1]};}` : null}
+            ${photo.colorPalette[2] ? `50% { fill: ${photo.colorPalette[2]};}` : null}
+            ${photo.colorPalette[3] ? `75% { fill: ${photo.colorPalette[3]};}` : null}
+            ${photo.colorPalette[4] ? `100% { fill: ${photo.colorPalette[4]};}` : null}
           }
         `}</style>
       </Head>

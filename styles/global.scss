@@ -88,13 +88,13 @@ main {
 #logo{
   margin-bottom: 44px; 
   path {
-    fill: #121419;
-    opacity: 0.8;
-    animation-name: logoPalette;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation: logoPalette 20s infinite;
+    -webkit-animation: logoPalette 20s infinite;
     animation-direction: alternate;
-    animation-timing-function: linear;  
+    -webkit-animation-direction: alternate;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;  
+    opacity: 0.8;
   }
 }
 

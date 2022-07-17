@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from "next/head";
 import slugify from 'slugify';
 import Link from "next/link";
 import path from 'path';
@@ -11,6 +12,11 @@ const galleryHeight = 320;
 const Home: NextPage = () => {
   return (
     <Layout>
+      <Head>
+        <style>{`
+          #logo path { fill: #121419; }
+        `}</style>
+      </Head>
       <section className='gallery-grid'>
         {data.map(p => (
           <div key={p.fileName} style={{ width: `${p.width*galleryHeight/p.height}px`, flexGrow: `${p.width*galleryHeight/p.height}` }}>
