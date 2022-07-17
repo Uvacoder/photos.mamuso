@@ -57,7 +57,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: minmax(192px, 304px) auto;
+  grid-template-columns: 248px auto;
   grid-template-rows: 52px auto 80px;
   gap: 16px;
   padding: 32px;
@@ -88,5 +88,54 @@ main {
   path {
     fill: #121419;
     opacity: 0.8;
+    animation-name: logoPalette;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;  
   }
+}
+
+#photo {
+  text-align: center;
+}
+
+.photo-meta {
+  opacity: .6;
+  margin: 12px 0;
+}
+
+@media (max-width: 1024px) {
+
+  main {
+      grid-template-columns: auto;
+      grid-template-rows: 52px auto auto 80px;
+      gap: 16px;
+      padding: 32px;
+      min-height: 100vh;
+      box-sizing: border-box;
+  
+      #sidebar {
+        grid-column: 1;
+        grid-row: 1;
+      }
+  
+      #meta {
+        grid-column: 1;
+        grid-row: 3;
+      }
+  
+      #content {
+        grid-column: 1;
+        grid-row: 2;
+        overflow: auto;
+      }
+  
+      #footer {
+        grid-column: 1;
+        grid-row: 4;
+        margin: 64px 0 0;
+      }
+    }
+
 }
