@@ -15,7 +15,7 @@ const Layout = ({ children, title = "", photo = {} }: any) => {
         <div id="sidebar">
           <Logo />
         </div>
-        <Meta/>
+        <Meta photo={photo} />
         <div id="content">
           {children}
         </div>
