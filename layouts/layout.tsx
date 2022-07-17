@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Logo from "../components/logo";
+import Meta from "components/meta";
 import Footer from "../components/footer";
 
 const Layout = ({ children, title = "", photo = {} }: any) => {
@@ -14,13 +15,7 @@ const Layout = ({ children, title = "", photo = {} }: any) => {
         <div id="sidebar">
           <Logo />
         </div>
-        <div id="meta">
-          {photo.fileName == null ?
-            (<p>Roses are red, violets are blue, and I’m terrible at color grading.</p>)
-            :
-            (<p>patata</p>)
-          }
-        </div>
+        <Meta/>
         <div id="content">
           {children}
         </div>
