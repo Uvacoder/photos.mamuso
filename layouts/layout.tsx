@@ -8,6 +8,7 @@ const Layout = ({ children, title = "", photo = {} }: any) => {
     <div>
       <Head>
         <title>{composedTitle}</title>
+        <script src="https://cdn.usefathom.com/script.js" data-site="UDHOAOWJ" defer></script>
       </Head>
       <main>
         <div id="sidebar">
