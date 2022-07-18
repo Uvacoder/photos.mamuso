@@ -8,7 +8,7 @@ import sharp from 'sharp';
 
 // -----------------------------------------------------------
 // Folder with original images
-const imageFolder = './public/images/';
+const imageFolder = './originals/';
 const thumbFolder = './public/thumbs/';
 const dataFolder = './data/export/';
 
