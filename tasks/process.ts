@@ -7,7 +7,7 @@ import fastExif from 'fast-exif';
 import sharp from 'sharp';
 
 // -----------------------------------------------------------
-// Folder with original images
+// Folders
 const imageFolder = './originals/';
 const thumbFolder = './public/thumbs/';
 const dataFolder = './data/export/';
