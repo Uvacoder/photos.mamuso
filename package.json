@@ -30,6 +30,7 @@
     "eslint-config-next": "^0.2.4",
     "fast-exif": "^1.0.1",
     "glob": "^8.0.3",
+    "next-seo": "^5.4.0",
     "puppeteer": "^15.4.0",
     "sharp": "^0.30.7",
     "stylelint-config-recommended": "^3.0.0",

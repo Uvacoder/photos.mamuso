@@ -1,13 +1,15 @@
 import type { NextPage } from 'next'
 import Head from "next/head";
 import slugify from 'slugify';
-import Link from "next/link";
+import { NextSeo } from 'next-seo';
 import path from 'path';
 
 import Layout from "../../layouts/layout";
 import data from "../../data/data.json";
 
 const PhotoPage: NextPage = ({ photo }: any) => {
+  const photoBasename = path.basename(photo.fileName, path.extname(photo.fileName))
+  const photoUrl = `http://photos.mamuso.net/photo/${photoBasename}–${slugify(photo.title, {lower:true})}`
   return (
     <Layout photo={photo} title={photo.title}>
       <Head>
@@ -28,6 +30,32 @@ const PhotoPage: NextPage = ({ photo }: any) => {
           }
         `}</style>
       </Head>
+
+      <NextSeo
+        title= {photo.title}
+        description= {photo.date}
+        canonical={photoUrl}
+        openGraph={{
+          url: `${photoUrl}`,
+          title: `${photo.title}`,
+          description: `${photo.date}`,
+          images: [
+            {
+              url: `https://photos.mamuso.net/og/${photoBasename}.png`,
+              width: 1024,
+              height: 540,
+              alt: `${photo.title}`,
+            },
+          ],
+          site_name: `${photo.title} – Mamuso has a camera – a gallery of yellowish photos`,
+        }}
+        twitter={{
+          handle: '@mamuso',
+          site: '@mamuso',
+          cardType: 'summary_large_image',
+        }}
+      />
+
       <div id="photo">
         <img src={`/thumbs/${path.basename(photo.fileName, path.extname(photo.fileName))}_4096.jpg`} alt={photo.title} />
       </div>
