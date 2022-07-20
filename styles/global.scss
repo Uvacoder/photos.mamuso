@@ -100,6 +100,11 @@ main {
 
 #photo {
   text-align: center;
+  img {
+    width: 100%;
+    max-width: 4096px;
+    max-height: 4096px;
+  }
 }
 
 .photo-meta {
