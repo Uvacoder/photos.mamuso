@@ -104,8 +104,9 @@ main {
     display: inline-block;
     max-width: 2048px;
     max-height: 2048px;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
 
