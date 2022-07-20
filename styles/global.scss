@@ -101,9 +101,11 @@ main {
 #photo {
   text-align: center;
   img {
-    width: 100%;
-    max-width: 4096px;
-    max-height: 4096px;
+    display: inline-block;
+    max-width: 2048px;
+    max-height: 2048px;
+    height: auto;
+    width: auto;
   }
 }
 
